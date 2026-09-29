@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="external.js" defer></script>
+</head>
+
+<body>
+    <div id="box">
+        <p id="title">Pop-up demo</p>
+    </div>
+
+    <div>
+    <button onclick=" clicked() ">Button1</button>
+    <button onclick=" clicks() ">Button2</button>
+
+    <script type="text/javascript">
+        function clicked() {
+            alert ( "Hello!" )
+        }
+        function clicks() {
+            alert ( "Noooo" )
+        }
+    </script>
+    </div>
+
+    <div>
+    <p id="toChange">Demo paragraph style change</p>
+    
+    <button onclick="clickFunction()">Click Here</button>
+    
+    <script>
+        function clickFunction() {
+            document.getElementById("toChange").style.fontFamily = "Helvetica";
+            document.getElementById("toChange").style.fontSize = "50px";
+            document.getElementById("toChange").style.color = "yellow";
+        }
+    </script>
+    </div>
+
+</body>
+</html>
